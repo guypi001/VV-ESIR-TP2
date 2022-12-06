@@ -53,4 +53,3 @@ Pick a Java project from Github (see the [instructions](../sujet.md) for suggest
 		intentional (e.g. to be able to provide Javadoc) and unintentional (someone forgot to write the implementation or 
 		this constructor can be simply deleted). 
 
-Translated with www.DeepL.com/Translator (free version)
