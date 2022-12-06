@@ -4,3 +4,6 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 ## Answer
 TCC is defined as the percentage of methods pairs, which are directly related. LCC is defined as the percentage of methods pairs, which are either directly or indirectly related
+Then TCC is defined as the relative number of directly connected(NDC) public methods TCC = NDC / NP and LCC is defined as the relative number of directly or indirectly
+connected (NIC) public methods LCC = NIC / NP.
+
