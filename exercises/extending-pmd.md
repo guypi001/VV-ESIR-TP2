@@ -23,3 +23,19 @@ Use your rule with different projects and describe you findings below. See the [
 
 ## Answer
 
+    ```xml
+    <ruleset>
+        <rule name="nestedIf" language="java" message="use of three or more nested if statements" class="net.sourceforge.pmd.lang.rule.XPathRule">
+            <description> </description>
+            <priority>3</priority>
+            <properties>
+                <property name="version" value="2.0"/>
+                <property name="xpath">
+                <value>
+                    /IfStatement[count(ancestor::IfStatement)>=2]
+                </value>
+                </property>
+            </properties>
+        </rule>
+    </ruleset>
+    ```
