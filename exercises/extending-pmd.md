@@ -23,7 +23,7 @@ Use your rule with different projects and describe you findings below. See the [
 
 ## Answer
 
-    ```xml
+    
     <ruleset>
         <rule name="nestedIf" language="java" message="use of three or more nested if statements" class="net.sourceforge.pmd.lang.rule.XPathRule">
             <description> </description>
@@ -38,4 +38,4 @@ Use your rule with different projects and describe you findings below. See the [
             </properties>
         </rule>
     </ruleset>
-    ```
+   
