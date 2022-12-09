@@ -22,8 +22,8 @@ You can find more information on extending PMD in the following link: https://pm
 Use your rule with different projects and describe you findings below. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 ## Answer
-
-    
+In order to realize our new rule for Pmd we used pmd-designer And then wrote our rule with xpath  We had to look for an ifstatement which had two ancestors also ifstatement Once the rule was written we exported it to xml format We then added the ruleset tags We went to the pmd-bin-6.51.0/lib folder. Then we open pmd-Java-6.51.0. Then in rulesets/Java we add our xml file and we test our rule
+   
     <ruleset>
         <rule name="nestedIf" language="java" message="use of three or more nested if statements" class="net.sourceforge.pmd.lang.rule.XPathRule">
             <description> </description>
