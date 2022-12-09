@@ -39,3 +39,19 @@ In order to realize our new rule for Pmd we used pmd-designer And then wrote ou
         </rule>
     </ruleset>
    
+We will then apply it to one of the projects with the command:
+
+    run.sh pmd -d /home/guypi/Documents/commons-collections-master -f text -R rulesets/java/nested.xml
+
+Below is a preview of the result
+
+    déc. 09, 2022 10:40:55 PM net.sourceforge.pmd.RuleSetFactory parseRuleSetNode
+    AVERTISSEMENT: RuleSet name is missing. Future versions of PMD will require it.
+    déc. 09, 2022 10:40:56 PM net.sourceforge.pmd.RuleSetFactory parseRuleSetNode
+    AVERTISSEMENT: RuleSet description is missing. Future versions of PMD will require it.
+    déc. 09, 2022 10:40:56 PM net.sourceforge.pmd.PMD encourageToUseIncrementalAnalysis
+    AVERTISSEMENT: This analysis could be faster, please consider using Incremental Analysis: https://pmd.github.io/pmd-6.51.0/pmd_userdocs_incremental_analysis.html
+    /home/guypi/Documents/commons-collections-master/src/main/java/org/apache/commons/collections4/CollectionUtils.java:1507:    nestedIf:    use of three or more       nested if statements
+    /home/guypi/Documents/commons-collections-master/src/main/java/org/apache/commons/collections4/MapUtils.java:229:    nestedIf:    use of three or more nested if     statements
+    /home/guypi/Documents/commons-collections-master/src/main/java/org/apache/commons/collections4/MapUtils.java:232:    nestedIf:    use of three or more nested if     statements
+    /home/guypi/Documents/commons-collections-master/src/main/java/org/apache/commons/collections4/MapUtils.java:235:    nestedIf:    use of three or more nested if    statements
