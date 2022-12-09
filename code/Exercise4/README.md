@@ -56,5 +56,12 @@ public class NoGetter {
             }
         }).explore(projectDir);
     }
+    
+    //Pour le test il faut remplacer le chemin par le votre
+    public static void main(String[] args) {
+        File projectDir = new File("/home/guypi/Documents/mini_editeur_v1/src/commands");
+        listClasses(projectDir);
+    }
+}
 	    
 ```
